@@ -133,10 +133,6 @@ function  evaluate({currentOperand,previousOperand,operation}){
 
 }
 
-function test(){
-  return{};
-}
-
 const INTEGER_FORMATTER = new Intl.NumberFormat("en-us",{maximumFractionDigits:0});
 
 function formatOperand(operand){
@@ -173,7 +169,7 @@ function App() {
       <OperationButton operation="-" dispatch={dispatch}>-</OperationButton>
       <DigitButton digit="." dispatch={dispatch}>.</DigitButton>
       <DigitButton digit="0" dispatch={dispatch}>0</DigitButton>
-      <button className="span-two " onClick={() => dispatch({type: ACTIONS.EVALUATE})}>=</button>
+      <button className="span-two" onClick={() => dispatch({type: ACTIONS.EVALUATE})}>=</button>
 
     </div>
       
